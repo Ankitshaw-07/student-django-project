@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Add Subject{% endblock %}
+
+{% block content %}
+<h2>Add Subject</h2>
+
+<div class="card">
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit" class="btn">Save Subject</button>
+        <a href="/subject/" class="btn secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}

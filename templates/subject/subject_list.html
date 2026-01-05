@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Subjects</h2>
+
+<table>
+<tr>
+    <th>Name</th>
+    <th>Course</th>
+    <th>Semester</th>
+</tr>
+{% for subject in subjects %}
+<tr>
+    <td>{{ subject.name }}</td>
+    <td>{{ subject.course.name }}</td>
+    <td>{{ subject.semester }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Add Result{% endblock %}
+
+{% block content %}
+<h2>Add Result</h2>
+
+<div class="card">
+    <form method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit" class="btn">Save Result</button>
+        <a href="/result/" class="btn secondary">Cancel</a>
+    </form>
+</div>
+{% endblock %}
