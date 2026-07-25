@@ -27,6 +27,5 @@ urlpatterns = [
     path('student/', include('studentapp.urls')),
     path('book/', include('book.urls')),
     path('result/', include('result.urls')),
-    path('dashboard/', include('dashboard.urls')),
-    # path('', RedirectView.as_view(url='/dashboard/')),
+    path('profile/', include('profile.urls')),
 ]

@@ -6,7 +6,7 @@ from studentapp.models import Student
 from book.models import Book
 from result.models import Result
 
-def dashboard_view(request):
+def profile_view(request):
     context = {
         'total_departments': Department.objects.count(),
         'total_courses': Course.objects.count(),
@@ -15,4 +15,4 @@ def dashboard_view(request):
         'total_books': Book.objects.count(),
         'total_results': Result.objects.count(),
     }
-    return render(request, 'dashboard/dashboard.html', context)
+    return render(request, 'profile/profile.html', context)
