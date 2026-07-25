@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Student Management System</title>
-</head>
-<body>
+{% extends 'base.html' %}
+    {% block title %}Student Management System {% endblock %}
+{% block content %}
     <h1>Welcome to Student Management System</h1>
-    <ul>
-        <li><a href="/dashboard/"><button>Dashboard</button></a></li>
-        <li><a href="/department/"><button>Departments</button></a></li>
-        <li><a href="/course/"><button>Courses</button></a></li>
-        <li><a href="/subject/"><button>Subjects</button></a></li>
-        <li><a href="/student/"><button>Students</button></a></li>
-        <li><a href="/book/"><button>Books</button></a></li>
-        <li><a href="/result/"><button>Results</button></a></li>
-    </ul>
-</body>
-</html>
+
+{% endblock %}
